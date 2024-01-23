@@ -1,0 +1,19 @@
+<%layout("../layouts/boilerplate") %>
+<div class="container">
+    <div class="col-6 offset-3 py-4">
+        <h4 class="text-center ">Post Something...</h4>
+        <form method="POST" action="/posts/new">
+            <div class="mb-3">
+                <label class="form-label" for="name">Post name</label>
+                <input class="form-control" type="text" name="posts[title]">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="description%">Description:</label>
+                <input class="form-control" type="text" name="posts[description]">
+            </div>
+            <button class="btn btn-success px-4 my-2">Post</button>
+        </form>
+    
+    </div>
+</div>
+

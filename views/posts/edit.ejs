@@ -1,0 +1,24 @@
+<%layout("../layouts/boilerplate") %>
+
+<div class="container">
+    <div class="col-6 offset-3 my-4">
+        <h4 class="text-center">Edit</h4>
+        <form method="post" action="/posts/<%=post._id%>/?_method=put">
+            <div class="my-3">
+                <label class="form-label" for="name">Post Name:</label>
+                <input class="form-control" type="text" name="posts[title]">
+            </div>
+            <div class="my-3">
+                <label class="form-label" for="name">Author Name:</label>
+                <input class="form-control" type="text" name="posts[name]">
+            </div>
+            <div class="my-3">
+                <label class="form-label" for="description%">Description:</label>
+                <input class="form-control" type="text" name="posts[description]">
+            </div>
+            <button class="btn btn-primary">Update</button>
+            <a class="btn btn-info" href="/posts/<%=post._id%>">Return</a>
+        </form>
+    </div>
+</div>
+  
